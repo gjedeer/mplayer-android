@@ -1,0 +1,3062 @@
+configuration: --enable-fbdev --host-cc=gcc --target=arm-none-linux --cc=arm-none-linux-gnueabi-gcc --as=arm-none-linux-gnueabi-as --ar=arm-none-linux-gnueabi-ar --ranlib=arm-none-linux-gnueabi-ranlib --enable-static --disable-dvdnav --disable-dvdread-internal --disable-libdvdcss-internal --enable-armv6
+
+============ Checking for arm-none-linux-gnueabi-gcc version ============
+Result is: 4.4.1 
+##########################################
+
+============ Checking for host cc ============
+Result is: gcc 
+##########################################
+
+============ Checking for cross compilation ============
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c  -I.  -static    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for byte order ============
+
+short ascii_name[] = { (('M'<<8)|'P'),(('l'<<8)|'a'),(('y'<<8)|'e'),(('r'<<8)|'B'),
+                       (('i'<<8)|'g'),(('E'<<8)|'n'),(('d'<<8)|'i'),(('a'<<8)|'n'),0};
+int main(void) { return (int)ascii_name; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c  -I.  -static    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: little-endian 
+##########################################
+
+============ Checking for extern symbol prefix ============
+
+int ff_extern;
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c  -I.  -static    -o /tmp/mplayer-configure-31487-10578/tmp -c
+
+
+Result is:  
+##########################################
+
+============ Checking for assembler support of -pipe option ============
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c  -I.  -static    -o /tmp/mplayer-configure-31487-10578/tmp -pipe -I.
+
+
+Result is: yes 
+##########################################
+
+============ Checking for compiler support of named assembler arguments ============
+Result is: yes 
+##########################################
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -std=gnu99
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -Wdeclaration-after-statement
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -Wno-pointer-sign
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -Wdisabled-optimization
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -Wundef
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -Wmissing-prototypes
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -Wstrict-prototypes
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -mno-omit-leaf-frame-pointer
+cc1: error: unrecognized command line option "-mno-omit-leaf-frame-pointer"
+
+
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -MMD -MF /tmp/mplayer-configure-31487-10578/test.d -MT test.o
+
+
+============ Checking for .align is a power of two ============
+
+int main(void) { __asm__ (".align 3"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for PIC ============
+
+int main(void) {
+#if !(defined(__PIC__) || defined(__pic__) || defined(PIC))
+#error PIC not enabled
+#endif
+    return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:3: error: #error PIC not enabled
+
+
+Result is: no 
+##########################################
+
+============ Checking for ARM pld instruction ============
+
+int main(void) { __asm__ volatile ("pld [r0]"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for ARMv5TE (Enhanced DSP Extensions) ============
+
+int main(void) { __asm__ volatile ("qadd r0, r0, r0"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for ARMv6 (SIMD instructions) ============
+Result is: yes 
+##########################################
+
+============ Checking for ARMv6t2 (SIMD instructions) ============
+
+int main(void) { __asm__ volatile ("movt r0, #0"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+{standard input}: Assembler messages:
+{standard input}:22: Error: selected processor does not support ARM mode `movt r0,#0'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for ARM VFP ============
+
+int main(void) { __asm__ volatile ("fadds s0, s0, s0"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+{standard input}: Assembler messages:
+{standard input}:22: Error: selected processor does not support ARM mode `fadds s0,s0,s0'
+
+
+Result is: no 
+##########################################
+
+============ Checking for ARM NEON ============
+
+int main(void) { __asm__ volatile ("vadd.i16 q0, q0, q0"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+{standard input}: Assembler messages:
+{standard input}:22: Error: selected processor does not support ARM mode `vadd.i16 q0,q0,q0'
+
+
+Result is: no 
+##########################################
+
+============ Checking for iWMMXt (Intel XScale SIMD instructions) ============
+
+int main(void) { __asm__ volatile ("wunpckelub wr6, wr4"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+{standard input}: Assembler messages:
+{standard input}:22: Error: selected processor does not support ARM mode `wunpckelub wr6,wr4'
+
+
+Result is: no 
+##########################################
+
+============ Checking for -lposix ============
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -lposix
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -lposix
+collect2: ld returned 1 exit status
+
+
+Result is: no 
+##########################################
+
+============ Checking for -lm ============
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -lm
+
+
+Result is: yes 
+##########################################
+
+============ Checking for langinfo ============
+
+#include <langinfo.h>
+int main(void) { nl_langinfo(CODESET); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for language ============
+Result is: messages: en - man pages: en - documentation: en 
+##########################################
+
+============ Checking for enable sighandler ============
+Result is: yes 
+##########################################
+
+============ Checking for runtime cpudetection ============
+Result is: no 
+##########################################
+
+============ Checking for restrict keyword ============
+
+void foo(char * restrict p); int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: restrict 
+##########################################
+
+============ Checking for __builtin_expect ============
+
+int foo(int a) {
+    a = __builtin_expect(a, 10);
+    return a == 10 ? 0 : 1;
+}
+int main(void) { return foo(10) && foo(0); }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: warning: no previous prototype for 'foo'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for kstat ============
+
+#include <kstat.h>
+int main(void) { (void) kstat_open(); (void) kstat_close(0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -lkstat
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: kstat.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for posix4 ============
+
+#include <time.h>
+int main(void) { (void) nanosleep(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -lposix4
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -lposix4
+collect2: ld returned 1 exit status
+
+
+Result is: no 
+##########################################
+
+============ Checking for exp2 ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = exp2; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for exp2f ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = exp2f; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for llrint ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = llrint; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for llrintf ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = llrintf; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for log2 ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = log2; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for log2f ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = log2f; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for lrint ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = lrint; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for lrintf ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = lrintf; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+
+
+Result is: yes 
+##########################################
+
+============ Checking for round ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = round; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for roundf ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = roundf; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for truncf ============
+
+#include <math.h>
+int main(void) { long (*foo)(float); foo = truncf; (void)(*foo)(0.0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -D_ISOC99_SOURCE -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: assignment from incompatible pointer type
+
+
+Result is: yes 
+##########################################
+
+============ Checking for mkstemp ============
+
+#include <stdlib.h>
+int main(void) { char a;  mkstemp(&a); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for nanosleep ============
+
+#include <time.h>
+int main(void) { (void) nanosleep(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for socklib ============
+
+#include <netdb.h>
+#include <sys/socket.h>
+int main(void) { (void) gethostbyname(0); (void) socket(AF_INET, SOCK_STREAM, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/ccQwTmaM.o: In function `main':
+tmp.c:(.text+0x8): warning: Using 'gethostbyname' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+
+
+Result is: yes 
+##########################################
+
+============ Checking for netdb.h, struct addrinfo ============
+
+#if HAVE_WINSOCK2_H
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#else
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
+#endif
+int main(void) { struct addrinfo ai; return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -DHAVE_WINSOCK2_H=0
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:9: warning: unused variable 'ai'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for netdb.h, getaddrinfo() ============
+
+#if HAVE_WINSOCK2_H
+#include <winsock2.h>
+#else
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
+#endif
+int main(void) { (void) getaddrinfo(0, 0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -DHAVE_WINSOCK2_H=0
+/tmp/cchW1FyO.o: In function `main':
+tmp.c:(.text+0x14): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+
+
+Result is: yes 
+##########################################
+
+============ Checking for sockaddr_storage ============
+
+#if HAVE_WINSOCK2_H
+#include <winsock2.h>
+#else
+#include <sys/types.h>
+#include <sys/socket.h>
+#endif
+int main(void) { struct sockaddr_storage sas; return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -DHAVE_WINSOCK2_H=0
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:7: warning: unused variable 'sas'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for struct ipv6_mreq ============
+
+#include <netinet/in.h>
+int main(void) { struct ipv6_mreq mreq6; return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: unused variable 'mreq6'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for struct sockaddr_in6 ============
+
+#include <netinet/in.h>
+int main(void) { struct sockaddr_in6 addr; return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: unused variable 'addr'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for struct sockaddr sa_len ============
+
+#if HAVE_WINSOCK2_H
+#include <winsock2.h>
+#else
+#include <sys/types.h>
+#include <sys/socket.h>
+#endif
+int main(void) { const void *p = &((struct sockaddr *)0)->sa_len; return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp -DHAVE_WINSOCK2_H=0
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:7: error: 'struct sockaddr' has no member named 'sa_len'
+/tmp/mplayer-configure-31487-10578/tmp.c:7: warning: unused variable 'p'
+
+
+Result is: no 
+##########################################
+
+============ Checking for arpa/inet.h ============
+
+#include <arpa/inet.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for inet_pton() ============
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+int main(void) { (void) inet_pton(0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for inet_aton() ============
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+int main(void) { (void) inet_aton(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for socklen_t ============
+
+#include <sys/socket.h>
+int main(void) { socklen_t v = 0; return v; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for closesocket() ============
+
+#include <winsock2.h>
+int main(void) { closesocket(~0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math   -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: winsock2.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for networking ============
+Result is: yes 
+##########################################
+
+============ Checking for inet6 ============
+
+#include <sys/types.h>
+#if !defined(_WIN32) || defined(__CYGWIN__)
+#include <sys/socket.h>
+#include <netinet/in.h>
+#else
+#include <ws2tcpip.h>
+#endif
+int main(void) { struct sockaddr_in6 six; socket(AF_INET6, SOCK_STREAM, AF_INET6); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:8: warning: unused variable 'six'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for gethostbyname2 ============
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
+int main(void) { gethostbyname2("", AF_INET); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/ccIzNCnA.o: In function `main':
+tmp.c:(.text+0xc): warning: Using 'gethostbyname2' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+
+
+Result is: yes 
+##########################################
+
+============ Checking for inttypes.h (required) ============
+
+#include <inttypes.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for int_fastXY_t in inttypes.h ============
+
+#include <inttypes.h>
+int main(void) {
+volatile int_fast16_t v= 0;
+return v; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for malloc.h ============
+
+#include <malloc.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for memalign() ============
+
+#include <malloc.h>
+int main(void) { (void) memalign(64, sizeof(char)); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for posix_memalign() ============
+
+#define _XOPEN_SOURCE 600
+#include <stdlib.h>
+int main(void) { posix_memalign(NULL, 0, 0); }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:3: warning: null argument where non-null required (argument 1)
+
+
+Result is: yes 
+##########################################
+
+============ Checking for alloca.h ============
+
+#include <alloca.h>
+int main(void) { (void) alloca(0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+
+#include <alloca.h>
+int main(void) { (void) alloca(0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for fastmemcpy ============
+Result is: yes 
+##########################################
+
+============ Checking for hard-coded tables ============
+Result is: no 
+##########################################
+
+============ Checking for mman.h ============
+
+#include <sys/types.h>
+#include <sys/mman.h>
+int main(void) { (void) mmap(0, 0, 0, 0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+
+#include <sys/types.h>
+#include <sys/mman.h>
+int main(void) { void *p = MAP_FAILED; return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:3: warning: unused variable 'p'
+
+
+============ Checking for dynamic loader ============
+
+#include <stddef.h>
+#include <dlfcn.h>
+int main(void) { dlopen("", 0); dlclose(NULL); dlsym(NULL, ""); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:3: warning: null argument where non-null required (argument 1)
+/tmp/ccex0rtt.o: In function `main':
+tmp.c:(.text+0x10): undefined reference to `dlopen'
+tmp.c:(.text+0x18): undefined reference to `dlclose'
+tmp.c:(.text+0x24): undefined reference to `dlsym'
+collect2: ld returned 1 exit status
+
+
+
+#include <stddef.h>
+#include <dlfcn.h>
+int main(void) { dlopen("", 0); dlclose(NULL); dlsym(NULL, ""); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp -ldl
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:3: warning: null argument where non-null required (argument 1)
+/tmp/ccBKVVj4.o: In function `main':
+tmp.c:(.text+0x10): warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+
+
+Result is: yes 
+##########################################
+
+============ Checking for dynamic a/v plugins support ============
+Result is: no 
+##########################################
+
+============ Checking for pthread ============
+
+#include <pthread.h>
+void* func(void *arg) { return arg; }
+int main(void) { pthread_t tid; return pthread_create(&tid, 0, func, 0) == 0 ? 0 : 1; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp -lpthreadGC2
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: no previous prototype for 'func'
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -lpthreadGC2
+collect2: ld returned 1 exit status
+
+
+
+#include <pthread.h>
+void* func(void *arg) { return arg; }
+int main(void) { pthread_t tid; return pthread_create(&tid, 0, func, 0) == 0 ? 0 : 1; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: no previous prototype for 'func'
+/tmp/cc1Kgzx2.o: In function `main':
+tmp.c:(.text+0x1c): undefined reference to `pthread_create'
+collect2: ld returned 1 exit status
+
+
+
+#include <pthread.h>
+void* func(void *arg) { return arg; }
+int main(void) { pthread_t tid; return pthread_create(&tid, 0, func, 0) == 0 ? 0 : 1; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.  -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:2: warning: no previous prototype for 'func'
+
+
+Result is: yes (using -lpthread)
+##########################################
+
+============ Checking for w32threads ============
+Result is: no (using pthread instead)
+##########################################
+
+============ Checking for rpath ============
+Result is: no 
+##########################################
+
+============ Checking for iconv ============
+
+#include <stdio.h>
+#include <unistd.h>
+#include <iconv.h>
+#define INBUFSIZE 1024
+#define OUTBUFSIZE 4096
+
+char inbuffer[INBUFSIZE];
+char outbuffer[OUTBUFSIZE];
+
+int main(void) {
+  size_t numread;
+  iconv_t icdsc;
+  char *tocode="UTF-8";
+  char *fromcode="cp1250";
+  if ((icdsc = iconv_open(tocode, fromcode)) != (iconv_t)(-1)) {
+    while ((numread = read(0, inbuffer, INBUFSIZE))) {
+      char *iptr=inbuffer;
+      char *optr=outbuffer;
+      size_t inleft=numread;
+      size_t outleft=OUTBUFSIZE;
+      if (iconv(icdsc, (const char **)&iptr, &inleft, &optr, &outleft)
+          != (size_t)(-1)) {
+        write(1, outbuffer, OUTBUFSIZE - outleft);
+      }
+    }
+    if (iconv_close(icdsc) == -1)
+      ;
+  }
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math    -o /tmp/mplayer-configure-31487-10578/tmp -lm
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:21: warning: passing argument 2 of 'iconv' from incompatible pointer type
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../arm-none-linux-gnueabi/libc/usr/include/iconv.h:43: note: expected 'char ** restrict' but argument is of type 'const char **'
+
+
+Result is: yes 
+##########################################
+
+============ Checking for soundcard.h ============
+
+#include <sys/soundcard.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes (sys/soundcard.h)
+##########################################
+
+============ Checking for sys/dvdio.h ============
+
+#include <sys/types.h>
+#include <sys/dvdio.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: sys/dvdio.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for sys/cdio.h ============
+
+#include <sys/types.h>
+#include <sys/cdio.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: sys/cdio.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for linux/cdrom.h ============
+
+#include <linux/cdrom.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for dvd.h ============
+
+#include <dvd.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: dvd.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for termcap ============
+
+#include <stddef.h>
+#include <term.h>
+int main(void) { tgetent(NULL, NULL); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lncurses
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: term.h: No such file or directory
+compilation terminated.
+
+
+
+#include <stddef.h>
+#include <term.h>
+int main(void) { tgetent(NULL, NULL); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ltinfo
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: term.h: No such file or directory
+compilation terminated.
+
+
+
+#include <stddef.h>
+#include <term.h>
+int main(void) { tgetent(NULL, NULL); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ltermcap
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: term.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for termios ============
+
+#include <termios.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes (using termios.h)
+##########################################
+
+============ Checking for shm ============
+
+#include <sys/types.h>
+#include <sys/shm.h>
+int main(void) { shmget(0, 0, 0); shmat(0, 0, 0); shmctl(0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for strsep() ============
+
+#include <string.h>
+int main(void) { char *s = "Hello, world!"; (void) strsep(&s, ","); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for vsscanf() ============
+
+#define _ISOC99_SOURCE
+#include <stdarg.h>
+#include <stdio.h>
+int main(void) { va_list ap; vsscanf("foo", "bar", ap); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:4: warning: 'ap.__ap' is used uninitialized in this function
+
+
+Result is: yes 
+##########################################
+
+============ Checking for swab() ============
+
+#define _XOPEN_SOURCE 600
+#include <unistd.h>
+int main(void) { swab(0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:3: warning: null argument where non-null required (argument 1)
+/tmp/mplayer-configure-31487-10578/tmp.c:3: warning: null argument where non-null required (argument 2)
+
+
+Result is: yes 
+##########################################
+
+============ Checking for POSIX select() ============
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <string.h>
+#include <sys/time.h>
+#include <unistd.h>
+int main(void) {int nfds = 1; fd_set readfds; struct timeval timeout; select(nfds,&readfds,NULL,NULL,&timeout); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for audio select() ============
+Result is: yes 
+##########################################
+
+============ Checking for gettimeofday() ============
+
+#include <sys/time.h>
+int main(void) {struct timeval tv; struct timezone tz; gettimeofday(&tv, &tz); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for glob() ============
+
+#include <stdio.h>
+#include <glob.h>
+int main(void) { glob_t gg; glob("filename",0,NULL,&gg); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for setenv() ============
+
+#include <stdlib.h>
+int main(void) { setenv("","",0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for setmode() ============
+
+#include <io.h>
+int main(void) { setmode(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: io.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for sys/sysinfo.h ============
+
+#include <sys/sysinfo.h>
+int main(void) {
+  struct sysinfo s_info;
+  sysinfo(&s_info);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for pkg-config ============
+Result is: no 
+##########################################
+
+============ Checking for Samba support (libsmbclient) ============
+
+#include <libsmbclient.h>
+int main(void) { smbc_opendir("smb://"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lsmbclient
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libsmbclient.h: No such file or directory
+compilation terminated.
+
+
+
+#include <libsmbclient.h>
+int main(void) { smbc_opendir("smb://"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lsmbclient -ldl
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libsmbclient.h: No such file or directory
+compilation terminated.
+
+
+
+#include <libsmbclient.h>
+int main(void) { smbc_opendir("smb://"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lsmbclient -ldl -lnsl
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libsmbclient.h: No such file or directory
+compilation terminated.
+
+
+
+#include <libsmbclient.h>
+int main(void) { smbc_opendir("smb://"); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lsmbclient -ldl -lssl -lnsl
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libsmbclient.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for tdfxfb ============
+Result is: no 
+##########################################
+
+============ Checking for s3fb ============
+Result is: no 
+##########################################
+
+============ Checking for wii ============
+Result is: no 
+##########################################
+
+============ Checking for tdfxvid ============
+Result is: no 
+##########################################
+
+============ Checking for xvr100 ============
+
+#include <unistd.h>
+#include <sys/fbio.h>
+#include <sys/visual_io.h>
+int main(void) {
+struct vis_identifier ident;
+struct fbgattr attr;
+ioctl(0, VIS_GETIDENTIFIER, &ident);
+ioctl(0, FBIOGATTR, &attr);
+return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: sys/fbio.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for tga ============
+Result is: yes 
+##########################################
+
+============ Checking for md5sum support ============
+Result is: yes 
+##########################################
+
+============ Checking for yuv4mpeg support ============
+Result is: yes 
+##########################################
+
+============ Checking for bl ============
+Result is: no 
+##########################################
+
+============ Checking for DirectFB ============
+
+#include <directfb.h>
+int main(void) { DirectFBInit(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ldirectfb
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: directfb.h: No such file or directory
+compilation terminated.
+
+
+
+#include <directfb.h>
+int main(void) { DirectFBInit(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/include/directfb -ldirectfb
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: directfb.h: No such file or directory
+compilation terminated.
+
+
+
+#include <directfb.h>
+int main(void) { DirectFBInit(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/include/directfb -ldirectfb
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: directfb.h: No such file or directory
+compilation terminated.
+
+
+
+#include <directfb.h>
+int main(void) { DirectFBInit(0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/include -ldirectfb
+cc1: warning: include location "/usr/local/include" is unsafe for cross-compilation
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: directfb.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for X11 headers presence ============
+Result is: no (check if the dev(el) packages are installed)
+##########################################
+
+============ Checking for X11 ============
+Result is: no (check if the dev(el) packages are installed)
+##########################################
+
+============ Checking for Xss screensaver extensions ============
+
+#include <X11/Xlib.h>
+#include <X11/extensions/scrnsaver.h>
+int main(void) { XScreenSaverSuspend(NULL, True); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lXss
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: X11/Xlib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for DPMS ============
+Result is: no 
+##########################################
+
+============ Checking for Xv ============
+Result is: no 
+##########################################
+
+============ Checking for XvMC ============
+Result is: no 
+##########################################
+
+============ Checking for VDPAU ============
+Result is: no 
+##########################################
+
+============ Checking for Xinerama ============
+Result is: no 
+##########################################
+
+============ Checking for Xxf86vm ============
+Result is: no 
+##########################################
+
+============ Checking for XF86keysym ============
+Result is: no 
+##########################################
+
+============ Checking for DGA ============
+Result is: no 
+##########################################
+
+============ Checking for 3dfx ============
+Result is: no 
+##########################################
+
+============ Checking for VIDIX ============
+Result is: no 
+##########################################
+
+============ Checking for GGI ============
+
+#include <ggi/ggi.h>
+int main(void) { ggiInit(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lggi
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: ggi/ggi.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for GGI extension: libggiwmh ============
+
+#include <ggi/ggi.h>
+#include <ggi/wmh.h>
+int main(void) { ggiInit(); ggiWmhInit(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lggi -lggiwmh
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: ggi/ggi.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for AA ============
+
+#include <aalib.h>
+extern struct aa_hardware_params aa_defparams;
+extern struct aa_renderparams aa_defrenderparams;
+int main(void) {
+aa_context *c;
+aa_renderparams *p;
+(void) aa_init(0, 0, 0);
+c = aa_autoinit(&aa_defparams);
+p = aa_getrenderparams();
+aa_autoinitkbd(c,0);
+return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -laa
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: aalib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for CACA ============
+./configure: line 4898: caca-config: command not found
+Result is: no 
+##########################################
+
+============ Checking for SVGAlib ============
+
+#include <vga.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lvga -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: vga.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for FBDev ============
+Result is: yes 
+##########################################
+
+============ Checking for DVB ============
+
+#include <poll.h>
+#include <sys/ioctl.h>
+#include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+#include <linux/dvb/dmx.h>
+#include <linux/dvb/frontend.h>
+#include <linux/dvb/video.h>
+#include <linux/dvb/audio.h>
+int main(void) {return 0;}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.   -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for PNG support ============
+
+#include <png.h>
+#include <string.h>
+int main(void) {
+  printf("png.h : %s\n", PNG_LIBPNG_VER_STRING);
+  printf("libpng: %s\n", png_libpng_ver);
+  return strcmp(PNG_LIBPNG_VER_STRING, png_libpng_ver);
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lpng -lz -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: png.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for MNG support ============
+
+#include <libmng.h>
+int main(void) {
+  const char * p_ver = mng_version_text();
+  return !p_ver || p_ver[0] == 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lmng -lz -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libmng.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for JPEG support ============
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <setjmp.h>
+#include <string.h>
+#include <jpeglib.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ljpeg -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:5: fatal error: jpeglib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for OpenJPEG (JPEG2000) support ============
+
+#define  OPJ_STATIC
+#include <openjpeg.h>
+int main(void) { opj_dparameters_t dec_params; opj_set_default_decoder_parameters(&dec_params); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lopenjpeg -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: openjpeg.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for PNM support ============
+Result is: yes 
+##########################################
+
+============ Checking for GIF support ============
+
+#include <gif_lib.h>
+int main(void) { QuantizeBuffer(0, 0, 0, 0, 0, 0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lungif
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: gif_lib.h: No such file or directory
+compilation terminated.
+
+
+
+#include <gif_lib.h>
+int main(void) { QuantizeBuffer(0, 0, 0, 0, 0, 0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lgif
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: gif_lib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for VESA support ============
+
+#include <vbe.h>
+int main(void) { vbeVersion(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lvbe -llrmi
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: vbe.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for SDL ============
+./configure: line 5290: sdl-config: command not found
+./configure: line 5292: sdl11-config: command not found
+
+#ifdef CONFIG_SDL_SDL_H
+#include <SDL/SDL.h>
+#else
+#include <SDL.h>
+#endif
+#ifndef __APPLE__
+// we allow SDL hacking our main() only on OSX
+#undef main
+#endif
+int main(int argc, char *argv[]) {
+  SDL_Init(SDL_INIT_VIDEO|SDL_INIT_NOPARACHUTE);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -DCONFIG_SDL_SDL_H -lSDL
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: SDL/SDL.h: No such file or directory
+compilation terminated.
+
+
+
+#ifdef CONFIG_SDL_SDL_H
+#include <SDL/SDL.h>
+#else
+#include <SDL.h>
+#endif
+#ifndef __APPLE__
+// we allow SDL hacking our main() only on OSX
+#undef main
+#endif
+int main(int argc, char *argv[]) {
+  SDL_Init(SDL_INIT_VIDEO|SDL_INIT_NOPARACHUTE);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -DCONFIG_SDL_SDL_H -lSDL -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: SDL/SDL.h: No such file or directory
+compilation terminated.
+
+
+
+#ifdef CONFIG_SDL_SDL_H
+#include <SDL/SDL.h>
+#else
+#include <SDL.h>
+#endif
+#ifndef __APPLE__
+// we allow SDL hacking our main() only on OSX
+#undef main
+#endif
+int main(int argc, char *argv[]) {
+  SDL_Init(SDL_INIT_VIDEO|SDL_INIT_NOPARACHUTE);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -DCONFIG_SDL_SDL_H -lSDL -lwinmm -lgdi32
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: SDL/SDL.h: No such file or directory
+compilation terminated.
+
+
+
+#ifdef CONFIG_SDL_SDL_H
+#include <SDL/SDL.h>
+#else
+#include <SDL.h>
+#endif
+#ifndef __APPLE__
+// we allow SDL hacking our main() only on OSX
+#undef main
+#endif
+int main(int argc, char *argv[]) {
+  SDL_Init(SDL_INIT_VIDEO|SDL_INIT_NOPARACHUTE);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -DCONFIG_SDL_SDL_H -lSDL -lwinmm -lgdi32 -ldxguid
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: SDL/SDL.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for OpenGL ============
+Result is: no 
+##########################################
+
+============ Checking for MatrixView ============
+Result is: no 
+##########################################
+
+============ Checking for DXR2 ============
+
+#include <dxr2ioctl.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: dxr2ioctl.h: No such file or directory
+compilation terminated.
+
+
+
+#include <dxr2ioctl.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/include/dxr2
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: dxr2ioctl.h: No such file or directory
+compilation terminated.
+
+
+
+#include <dxr2ioctl.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/include/dxr2
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: dxr2ioctl.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for DXR3/H+ ============
+
+#include <linux/em8300.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: linux/em8300.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for IVTV TV-Out (pre linux-2.6.24) ============
+
+#include <stdlib.h>
+#include <inttypes.h>
+#include <linux/types.h>
+#include <linux/videodev2.h>
+#include <linux/ivtv.h>
+#include <sys/ioctl.h>
+int main(void) {
+struct ivtv_cfg_stop_decode sd;
+struct ivtv_cfg_start_decode sd1;
+ioctl(0, IVTV_IOC_START_DECODE, &sd1);
+ioctl(0, IVTV_IOC_STOP_DECODE, &sd);
+return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:8: error: storage size of 'sd' isn't known
+/tmp/mplayer-configure-31487-10578/tmp.c:9: error: storage size of 'sd1' isn't known
+/tmp/mplayer-configure-31487-10578/tmp.c:10: error: 'IVTV_IOC_START_DECODE' undeclared (first use in this function)
+/tmp/mplayer-configure-31487-10578/tmp.c:10: error: (Each undeclared identifier is reported only once
+/tmp/mplayer-configure-31487-10578/tmp.c:10: error: for each function it appears in.)
+/tmp/mplayer-configure-31487-10578/tmp.c:11: error: 'IVTV_IOC_STOP_DECODE' undeclared (first use in this function)
+/tmp/mplayer-configure-31487-10578/tmp.c:9: warning: unused variable 'sd1'
+/tmp/mplayer-configure-31487-10578/tmp.c:8: warning: unused variable 'sd'
+
+
+Result is: no 
+##########################################
+
+============ Checking for V4L2 MPEG Decoder ============
+
+#include <stdlib.h>
+#include <inttypes.h>
+#include <linux/types.h>
+#include <linux/videodev2.h>
+#include <linux/version.h>
+int main(void) {
+#if LINUX_VERSION_CODE < KERNEL_VERSION(2,6,22)
+#error kernel headers too old, need 2.6.22
+#endif
+  struct v4l2_ext_controls ctrls;
+  ctrls.ctrl_class = V4L2_CTRL_CLASS_MPEG;
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for OSS Audio ============
+
+#include <sys/ioctl.h>
+#include <sys/soundcard.h>
+int main(void) { int arg = SNDCTL_DSP_SETFRAGMENT; return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c: In function 'main':
+/tmp/mplayer-configure-31487-10578/tmp.c:3: warning: unused variable 'arg'
+
+
+
+#include <sys/ioctl.h>
+#include <sys/soundcard.h>
+#ifdef OPEN_SOUND_SYSTEM
+int main(void) { return 0; }
+#else
+#error Not the real thing
+#endif
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for aRts ============
+./configure: line 5703: artsc-config: command not found
+Result is: no 
+##########################################
+
+============ Checking for EsounD ============
+./configure: line 5723: esd-config: command not found
+Result is: no 
+##########################################
+
+============ Checking for NAS ============
+
+#include <audio/audiolib.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lm -laudio -lXt
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: audio/audiolib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for pulse ============
+Result is: no 
+##########################################
+
+============ Checking for JACK ============
+
+#include <jack/jack.h>
+int main(void) { jack_client_open("test", JackUseExactName, NULL); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ljack
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: jack/jack.h: No such file or directory
+compilation terminated.
+
+
+
+#include <jack/jack.h>
+int main(void) { jack_client_open("test", JackUseExactName, NULL); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: jack/jack.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for OpenAL ============
+
+#ifdef OPENAL_AL_H
+#include <OpenAL/al.h>
+#else
+#include <AL/al.h>
+#endif
+int main(void) {
+  alSourceQueueBuffers(0, 0, 0);
+//  alGetSourcei(0, AL_SAMPLE_OFFSET, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lopenal
+/tmp/mplayer-configure-31487-10578/tmp.c:4: fatal error: AL/al.h: No such file or directory
+compilation terminated.
+
+
+
+#ifdef OPENAL_AL_H
+#include <OpenAL/al.h>
+#else
+#include <AL/al.h>
+#endif
+int main(void) {
+  alSourceQueueBuffers(0, 0, 0);
+//  alGetSourcei(0, AL_SAMPLE_OFFSET, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -DOPENAL_AL_H=1 -lopenal
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: OpenAL/al.h: No such file or directory
+compilation terminated.
+
+
+
+#ifdef OPENAL_AL_H
+#include <OpenAL/al.h>
+#else
+#include <AL/al.h>
+#endif
+int main(void) {
+  alSourceQueueBuffers(0, 0, 0);
+//  alGetSourcei(0, AL_SAMPLE_OFFSET, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lopenal32
+/tmp/mplayer-configure-31487-10578/tmp.c:4: fatal error: AL/al.h: No such file or directory
+compilation terminated.
+
+
+
+#ifdef OPENAL_AL_H
+#include <OpenAL/al.h>
+#else
+#include <AL/al.h>
+#endif
+int main(void) {
+  alSourceQueueBuffers(0, 0, 0);
+//  alGetSourcei(0, AL_SAMPLE_OFFSET, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -DOPENAL_AL_H=1 -lopenal32
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: OpenAL/al.h: No such file or directory
+compilation terminated.
+
+
+
+#ifdef OPENAL_AL_H
+#include <OpenAL/al.h>
+#else
+#include <AL/al.h>
+#endif
+int main(void) {
+  alSourceQueueBuffers(0, 0, 0);
+//  alGetSourcei(0, AL_SAMPLE_OFFSET, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -framework OpenAL
+arm-none-linux-gnueabi-gcc: OpenAL: No such file or directory
+cc1: error: unrecognized command line option "-framework"
+
+
+
+#ifdef OPENAL_AL_H
+#include <OpenAL/al.h>
+#else
+#include <AL/al.h>
+#endif
+int main(void) {
+  alSourceQueueBuffers(0, 0, 0);
+//  alGetSourcei(0, AL_SAMPLE_OFFSET, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -DOPENAL_AL_H=1 -framework OpenAL
+arm-none-linux-gnueabi-gcc: OpenAL: No such file or directory
+cc1: error: unrecognized command line option "-framework"
+
+
+Result is: no 
+##########################################
+
+============ Checking for ALSA audio ============
+
+#include <sys/asoundlib.h>
+#if !((SND_LIB_MAJOR == 0) && (SND_LIB_MINOR == 5))
+#error "alsa version != 0.5.x"
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lasound -ldl -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: sys/asoundlib.h: No such file or directory
+compilation terminated.
+
+
+
+#include <sys/asoundlib.h>
+#if !((SND_LIB_MAJOR == 0) && (SND_LIB_MINOR == 9))
+#error "alsa version != 0.9.x"
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lasound -ldl -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: sys/asoundlib.h: No such file or directory
+compilation terminated.
+
+
+
+#include <alsa/asoundlib.h>
+#if !((SND_LIB_MAJOR == 0) && (SND_LIB_MINOR == 9))
+#error "alsa version != 0.9.x"
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lasound -ldl -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: alsa/asoundlib.h: No such file or directory
+compilation terminated.
+
+
+
+#include <sys/asoundlib.h>
+#if !((SND_LIB_MAJOR == 1) && (SND_LIB_MINOR == 0))
+#error "alsa version != 1.0.x"
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lasound -ldl -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: sys/asoundlib.h: No such file or directory
+compilation terminated.
+
+
+
+#include <alsa/asoundlib.h>
+#if !((SND_LIB_MAJOR == 1) && (SND_LIB_MINOR == 0))
+#error "alsa version != 1.0.x"
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lasound -ldl -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: alsa/asoundlib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for Sun audio ============
+
+#include <sys/types.h>
+#include <sys/audioio.h>
+int main(void) { audio_info_t info; AUDIO_INITINFO(&info); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: sys/audioio.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for VCD support ============
+Result is: no (not supported on this OS)
+##########################################
+
+============ Checking for Blu-ray support ============
+
+#include <stdlib.h>
+#include <libbluray/bluray.h>
+int main(void) {
+  BLURAY_TITLE_INFO *i = bd_get_title_info(NULL, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lbluray
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: libbluray/bluray.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for dvdread ============
+
+#include <inttypes.h>
+#include <dvdread/dvd_reader.h>
+#include <dvdread/ifo_types.h>
+#include <dvdread/ifo_read.h>
+#include <dvdread/nav_read.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -ldl
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: dvdread/dvd_reader.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for internal libdvdcss ============
+Result is: no 
+##########################################
+
+============ Checking for cdparanoia ============
+
+#include <cdda_interface.h>
+#include <cdda_paranoia.h>
+// This need a better test. How ?
+int main(void) { void *test = cdda_verbose_set; return test == (void *)1; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lcdda_interface -lcdda_paranoia -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: cdda_interface.h: No such file or directory
+compilation terminated.
+
+
+
+#include <cdda_interface.h>
+#include <cdda_paranoia.h>
+// This need a better test. How ?
+int main(void) { void *test = cdda_verbose_set; return test == (void *)1; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/include/cdda -lcdda_interface -lcdda_paranoia -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: cdda_interface.h: No such file or directory
+compilation terminated.
+
+
+
+#include <cdda_interface.h>
+#include <cdda_paranoia.h>
+// This need a better test. How ?
+int main(void) { void *test = cdda_verbose_set; return test == (void *)1; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/include/cdda -lcdda_interface -lcdda_paranoia -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: cdda_interface.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libcdio ============
+
+#include <stdio.h>
+#include <cdio/version.h>
+#include <cdio/cdda.h>
+#include <cdio/paranoia.h>
+int main(void) {
+    void *test = cdda_verbose_set;
+    printf("%s\n", CDIO_VERSION);
+    return test == (void *)1;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lcdio_cdda -lcdio -lcdio_paranoia -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: cdio/version.h: No such file or directory
+compilation terminated.
+
+
+
+#include <stdio.h>
+#include <cdio/version.h>
+#include <cdio/cdda.h>
+#include <cdio/paranoia.h>
+int main(void) {
+    void *test = cdda_verbose_set;
+    printf("%s\n", CDIO_VERSION);
+    return test == (void *)1;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lcdio_cdda -lcdio -lcdio_paranoia -lwinmm -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: cdio/version.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for bitmap font support ============
+Result is: yes 
+##########################################
+
+============ Checking for freetype >= 2.0.9 ============
+Result is: no 
+##########################################
+
+============ Checking for fontconfig ============
+Result is: no (FreeType support needed)
+##########################################
+
+============ Checking for SSA/ASS support ============
+Result is: no (FreeType support needed)
+##########################################
+
+============ Checking for fribidi with charsets ============
+
+#include <stdlib.h>
+/* workaround for fribidi 0.10.4 and below */
+#define FRIBIDI_CHARSET_UTF8 FRIBIDI_CHAR_SET_UTF8
+#include <fribidi/fribidi.h>
+int main(void) {
+    if (fribidi_parse_charset("UTF-8") != FRIBIDI_CHAR_SET_UTF8)
+       exit(1);
+    return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lfribidi
+/tmp/mplayer-configure-31487-10578/tmp.c:4: fatal error: fribidi/fribidi.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for ENCA ============
+
+#include <sys/types.h>
+#include <enca.h>
+int main(void) {
+    const char **langs;
+    size_t langcnt;
+    langs = enca_get_languages(&langcnt);
+    return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lenca -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: enca.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for zlib ============
+
+#include <zlib.h>
+int main(void) { (void) inflate(0, Z_NO_FLUSH); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lz
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: zlib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for bzlib ============
+
+#include <bzlib.h>
+int main(void) { BZ2_bzlibVersion(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lbz2
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: bzlib.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for RTC ============
+
+#include <sys/ioctl.h>
+#ifdef __linux__
+#include <linux/rtc.h>
+#else
+#include <rtc.h>
+#define RTC_PIE_ON RTCIO_PIE_ON
+#endif
+int main(void) { return RTC_PIE_ON; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+
+
+Result is: yes 
+##########################################
+
+============ Checking for liblzo2 support ============
+
+#include <lzo/lzo1x.h>
+int main(void) { lzo_init(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -llzo2
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: lzo/lzo1x.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for mad support ============
+
+#include <mad.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lmad
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: mad.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for Twolame ============
+
+#include <twolame.h>
+int main(void) { twolame_init(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ltwolame -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: twolame.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for Toolame ============
+
+#include <toolame.h>
+int main(void) { toolame_init(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ltoolame -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: toolame.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for OggVorbis support ============
+Result is: yes (internal Tremor)
+##########################################
+
+============ Checking for libspeex (version >= 1.1 required) ============
+
+#include <speex/speex.h>
+int main(void) { SpeexBits bits; void *dec; speex_decode_int(dec, &bits, dec); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lspeex -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: speex/speex.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libgsm ============
+
+#include <gsm/gsm.h>
+int main(void) { gsm_create(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lgsm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: gsm/gsm.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for OggTheora support ============
+
+#include <theora/theora.h>
+#include <string.h>
+int main(void) {
+  /* Theora is in flux, make sure that all interface routines and datatypes
+   * exist and work the way we expect it, so we don't break MPlayer. */
+  ogg_packet op;
+  theora_comment tc;
+  theora_info inf;
+  theora_state st;
+  yuv_buffer yuv;
+  int r;
+  double t;
+
+  theora_info_init(&inf);
+  theora_comment_init(&tc);
+
+  return 0;
+
+  /* we don't want to execute this kind of nonsense; just for making sure
+   * that compilation works... */
+  memset(&op, 0, sizeof(op));
+  r = theora_decode_header(&inf, &tc, &op);
+  r = theora_decode_init(&st, &inf);
+  t = theora_granule_time(&st, op.granulepos);
+  r = theora_decode_packetin(&st, &op);
+  r = theora_decode_YUVout(&st, &yuv);
+  theora_clear(&st);
+
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: theora/theora.h: No such file or directory
+compilation terminated.
+
+
+
+#include <theora/theora.h>
+#include <string.h>
+int main(void) {
+  /* Theora is in flux, make sure that all interface routines and datatypes
+   * exist and work the way we expect it, so we don't break MPlayer. */
+  ogg_packet op;
+  theora_comment tc;
+  theora_info inf;
+  theora_state st;
+  yuv_buffer yuv;
+  int r;
+  double t;
+
+  theora_info_init(&inf);
+  theora_comment_init(&tc);
+
+  return 0;
+
+  /* we don't want to execute this kind of nonsense; just for making sure
+   * that compilation works... */
+  memset(&op, 0, sizeof(op));
+  r = theora_decode_header(&inf, &tc, &op);
+  r = theora_decode_init(&st, &inf);
+  t = theora_granule_time(&st, op.granulepos);
+  r = theora_decode_packetin(&st, &op);
+  r = theora_decode_YUVout(&st, &yuv);
+  theora_clear(&st);
+
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp tremor/bitwise.c
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: theora/theora.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for mp3lib support ============
+Result is: yes 
+##########################################
+
+============ Checking for mpg123 support ============
+
+#include <mpg123.h>
+int main(void){ mpg123_init(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lmpg123
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: mpg123.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for liba52 support ============
+
+#include <inttypes.h>
+#include <a52dec/a52.h>
+int main(void) { a52_state_t *testHand; testHand=a52_init(0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -la52
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: a52dec/a52.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libmpeg2 support ============
+Result is: yes (internal)
+##########################################
+
+============ Checking for libdca support ============
+
+#include <inttypes.h>
+#include <dts.h>
+int main(void) { dts_init(0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ldca -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: dts.h: No such file or directory
+compilation terminated.
+
+
+
+#include <inttypes.h>
+#include <dts.h>
+int main(void) { dts_init(0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ldts -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: dts.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libmpcdec (musepack, version >= 1.2.1 required) ============
+
+#include <stddef.h>
+#include <mpcdec/mpcdec.h>
+int main(void) {
+  mpc_streaminfo info;
+  mpc_decoder decoder;
+  mpc_decoder_set_streaminfo(&decoder, &info);
+  mpc_decoder_decode_frame(&decoder, NULL, 0, NULL);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lmpcdec -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: mpcdec/mpcdec.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for FAAC support ============
+
+#include <inttypes.h>
+#include <faac.h>
+int main(void) { unsigned long x, y; faacEncOpen(48000, 2, &x, &y); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lfaac -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: faac.h: No such file or directory
+compilation terminated.
+
+
+
+#include <inttypes.h>
+#include <faac.h>
+int main(void) { unsigned long x, y; faacEncOpen(48000, 2, &x, &y); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lfaac -lmp4v2 -lstdc++ -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: faac.h: No such file or directory
+compilation terminated.
+
+
+Result is: no (in libavcodec: no)
+##########################################
+
+============ Checking for FAAD2 support ============
+Result is: yes (internal floating-point)
+##########################################
+
+============ Checking for LADSPA plugin support ============
+
+#include <ladspa.h>
+int main(void) {
+LADSPA_Descriptor ld = {0};
+return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: ladspa.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libbs2b audio filter support ============
+
+#include <bs2b.h>
+#if BS2B_VERSION_MAJOR < 3
+#error Please use libbs2b >= 3.0.0, older versions are not supported.
+#endif
+int main(void) {
+    t_bs2bdp filter;
+    filter=bs2b_open();
+    bs2b_close(filter);
+    return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lm -lbs2b
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: bs2b.h: No such file or directory
+compilation terminated.
+
+
+
+#include <bs2b.h>
+#if BS2B_VERSION_MAJOR < 3
+#error Please use libbs2b >= 3.0.0, older versions are not supported.
+#endif
+int main(void) {
+    t_bs2bdp filter;
+    filter=bs2b_open();
+    bs2b_close(filter);
+    return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/include/bs2b -lm -lbs2b
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: bs2b.h: No such file or directory
+compilation terminated.
+
+
+
+#include <bs2b.h>
+#if BS2B_VERSION_MAJOR < 3
+#error Please use libbs2b >= 3.0.0, older versions are not supported.
+#endif
+int main(void) {
+    t_bs2bdp filter;
+    filter=bs2b_open();
+    bs2b_close(filter);
+    return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/include -lm -lbs2b
+cc1: warning: include location "/usr/local/include" is unsafe for cross-compilation
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: bs2b.h: No such file or directory
+compilation terminated.
+
+
+
+#include <bs2b.h>
+#if BS2B_VERSION_MAJOR < 3
+#error Please use libbs2b >= 3.0.0, older versions are not supported.
+#endif
+int main(void) {
+    t_bs2bdp filter;
+    filter=bs2b_open();
+    bs2b_close(filter);
+    return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/include/bs2b -lm -lbs2b
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: bs2b.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for Win32 codecs ============
+Result is: no 
+##########################################
+
+============ Checking for XAnim codecs ============
+Result is: yes (dynamic loader support needed)
+##########################################
+
+============ Checking for RealPlayer codecs ============
+Result is: no (dynamic loader support needed)
+##########################################
+
+============ Checking for QuickTime codecs ============
+Result is: auto 
+##########################################
+
+============ Checking for Nemesi Streaming Media libraries ============
+Result is: no 
+##########################################
+
+============ Checking for LIVE555 Streaming Media libraries ============
+
+#include <liveMedia.hh>
+#if (LIVEMEDIA_LIBRARY_VERSION_INT < 1141257600)
+#error Please upgrade to version 2006.03.03 or later of the "LIVE555 Streaming Media" libraries - available from <www.live555.com/liveMedia/>
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.cpp -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I./liveMedia/include -I./UsageEnvironment/include -I./groupsock/include -lstdc++
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wmissing-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wno-pointer-sign" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
+/tmp/mplayer-configure-31487-10578/tmp.cpp:1: fatal error: liveMedia.hh: No such file or directory
+compilation terminated.
+
+
+
+#include <liveMedia.hh>
+#if (LIVEMEDIA_LIBRARY_VERSION_INT < 1141257600)
+#error Please upgrade to version 2006.03.03 or later of the "LIVE555 Streaming Media" libraries - available from <www.live555.com/liveMedia/>
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.cpp -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/lib/live/liveMedia/include -I/usr/local/lib/live/UsageEnvironment/include -I/usr/local/lib/live/groupsock/include -lstdc++
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wmissing-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wno-pointer-sign" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
+/tmp/mplayer-configure-31487-10578/tmp.cpp:1: fatal error: liveMedia.hh: No such file or directory
+compilation terminated.
+
+
+
+#include <liveMedia.hh>
+#if (LIVEMEDIA_LIBRARY_VERSION_INT < 1141257600)
+#error Please upgrade to version 2006.03.03 or later of the "LIVE555 Streaming Media" libraries - available from <www.live555.com/liveMedia/>
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.cpp -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/lib/live/liveMedia/include -I/usr/lib/live/UsageEnvironment/include -I/usr/lib/live/groupsock/include -lstdc++
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wmissing-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wno-pointer-sign" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
+/tmp/mplayer-configure-31487-10578/tmp.cpp:1: fatal error: liveMedia.hh: No such file or directory
+compilation terminated.
+
+
+
+#include <liveMedia.hh>
+#if (LIVEMEDIA_LIBRARY_VERSION_INT < 1141257600)
+#error Please upgrade to version 2006.03.03 or later of the "LIVE555 Streaming Media" libraries - available from <www.live555.com/liveMedia/>
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.cpp -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/lib64/live/liveMedia/include -I/usr/lib64/live/UsageEnvironment/include -I/usr/lib64/live/groupsock/include -lstdc++
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wmissing-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wno-pointer-sign" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
+/tmp/mplayer-configure-31487-10578/tmp.cpp:1: fatal error: liveMedia.hh: No such file or directory
+compilation terminated.
+
+
+
+#include <liveMedia.hh>
+#if (LIVEMEDIA_LIBRARY_VERSION_INT < 1141257600)
+#error Please upgrade to version 2006.03.03 or later of the "LIVE555 Streaming Media" libraries - available from <www.live555.com/liveMedia/>
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.cpp -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/live/liveMedia/include -I/usr/local/live/UsageEnvironment/include -I/usr/local/live/groupsock/include -lstdc++
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wmissing-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wno-pointer-sign" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
+/tmp/mplayer-configure-31487-10578/tmp.cpp:1: fatal error: liveMedia.hh: No such file or directory
+compilation terminated.
+
+
+
+#include <liveMedia.hh>
+#if (LIVEMEDIA_LIBRARY_VERSION_INT < 1141257600)
+#error Please upgrade to version 2006.03.03 or later of the "LIVE555 Streaming Media" libraries - available from <www.live555.com/liveMedia/>
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.cpp -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/local/lib/live/liveMedia/include -I/usr/local/lib/live/UsageEnvironment/include -I/usr/local/lib/live/groupsock/include -lstdc++
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wmissing-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wno-pointer-sign" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
+/tmp/mplayer-configure-31487-10578/tmp.cpp:1: fatal error: liveMedia.hh: No such file or directory
+compilation terminated.
+
+
+
+#include <liveMedia.hh>
+#if (LIVEMEDIA_LIBRARY_VERSION_INT < 1141257600)
+#error Please upgrade to version 2006.03.03 or later of the "LIVE555 Streaming Media" libraries - available from <www.live555.com/liveMedia/>
+#endif
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.cpp -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -I/usr/include/liveMedia -I/usr/include/UsageEnvironment -I/usr/include/groupsock -lliveMedia -lgroupsock -lUsageEnvironment -lBasicUsageEnvironment -lstdc++ -lstdc++
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wmissing-prototypes" is valid for Ada/C/ObjC but not for C++
+cc1plus: warning: command line option "-Wno-pointer-sign" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
+/tmp/mplayer-configure-31487-10578/tmp.cpp:1: fatal error: liveMedia.hh: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for RTMPDump Streaming Media library ============
+
+#include <librtmp/rtmp.h>
+int main(void) { RTMP r; RTMP_Socket(&r); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lrtmp
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: librtmp/rtmp.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for FFmpeg libavutil ============
+Result is: yes (static)
+##########################################
+
+============ Checking for FFmpeg libavcore ============
+Result is: yes (static)
+##########################################
+
+============ Checking for FFmpeg libavcodec ============
+Result is: yes (static)
+##########################################
+
+============ Checking for FFmpeg libavformat ============
+Result is: yes (static)
+##########################################
+
+============ Checking for FFmpeg libpostproc ============
+Result is: yes (static)
+##########################################
+
+============ Checking for FFmpeg libswscale ============
+Result is: yes (static)
+##########################################
+
+============ Checking for /dev/mga_vid ============
+Result is: no 
+##########################################
+
+============ Checking for xmga ============
+Result is: no 
+##########################################
+
+============ Checking for libopencore_amr narrowband ============
+
+#include <opencore-amrnb/interf_dec.h>
+int main(void) { Decoder_Interface_init(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lopencore-amrnb
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: opencore-amrnb/interf_dec.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libopencore_amr wideband ============
+
+#include <opencore-amrwb/dec_if.h>
+int main(void) { D_IF_init(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lopencore-amrwb
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: opencore-amrwb/dec_if.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libdv-0.9.5+ ============
+
+#include <libdv/dv.h>
+int main(void) { dv_encoder_t* enc=dv_encoder_new(1,1,1); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -ldv -lpthread -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libdv/dv.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for Xvid ============
+
+#include <xvid.h>
+int main(void) { xvid_global(0, 0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lxvidcore -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: xvid.h: No such file or directory
+compilation terminated.
+
+
+
+#include <xvid.h>
+int main(void) { xvid_global(0, 0, 0, 0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lxvidcore -lm -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: xvid.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for Xvid two pass plugin ============
+Result is: no 
+##########################################
+
+============ Checking for x264 ============
+
+#include <inttypes.h>
+#include <x264.h>
+#if X264_BUILD < 98
+#error We do not support old versions of x264. Get the latest from git.
+#endif
+int main(void) { x264_encoder_open((void*)0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lx264 -lpthread
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: x264.h: No such file or directory
+compilation terminated.
+
+
+
+#include <inttypes.h>
+#include <x264.h>
+#if X264_BUILD < 98
+#error We do not support old versions of x264. Get the latest from git.
+#endif
+int main(void) { x264_encoder_open((void*)0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lx264 -lpthread -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:2: fatal error: x264.h: No such file or directory
+compilation terminated.
+
+
+Result is: no (in libavcodec: no)
+##########################################
+
+============ Checking for libdirac ============
+Result is: no 
+##########################################
+
+============ Checking for libschroedinger ============
+Result is: no 
+##########################################
+
+============ Checking for libvpx ============
+
+#include <vpx/vpx_encoder.h>
+#include <vpx/vpx_decoder.h>
+#include <vpx/vp8dx.h>
+#include <vpx/vp8cx.h>
+struct vpx_codec_ctx decoder;
+int main(void) {
+  vpx_codec_dec_init(NULL, &vpx_codec_vp8_dx_algo, NULL, 0);
+  vpx_codec_enc_init(NULL, &vpx_codec_vp8_dx_algo, NULL, 0);
+  return 0;
+}
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lvpx
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: vpx/vpx_encoder.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for libnut ============
+
+#include <libnut.h>
+nut_context_tt * nut;
+int main(void) { (void)nut_error(0); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lnut
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libnut.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for zr ============
+Result is: no 
+##########################################
+
+============ Checking for libmp3lame ============
+
+#include <lame/lame.h>
+int main(void) { lame_version_t lv; (void) lame_init();
+    get_lame_version_numerical(&lv);
+    return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lmp3lame -lm
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: lame/lame.h: No such file or directory
+compilation terminated.
+
+
+Result is: no (in libavcodec: no)
+##########################################
+
+============ Checking for mencoder ============
+Result is: yes 
+##########################################
+
+============ Checking for UnRAR executable ============
+Result is: yes 
+##########################################
+
+============ Checking for TV interface ============
+Result is: yes 
+##########################################
+
+============ Checking for DirectShow TV interface ============
+Result is: no 
+##########################################
+
+============ Checking for Video 4 Linux TV interface ============
+Result is: no 
+##########################################
+
+============ Checking for Video 4 Linux 2 TV interface ============
+Result is: no 
+##########################################
+
+============ Checking for Radio interface ============
+Result is: no 
+##########################################
+
+============ Checking for Capture for Radio interface ============
+Result is: no 
+##########################################
+
+============ Checking for Video 4 Linux 2 Radio interface ============
+Result is: no 
+##########################################
+
+============ Checking for Video 4 Linux Radio interface ============
+Result is: no 
+##########################################
+
+============ Checking for Video 4 Linux 2 MPEG PVR interface ============
+Result is: no 
+##########################################
+
+============ Checking for ftp ============
+Result is: yes 
+##########################################
+
+============ Checking for vstream client ============
+
+#include <vstream-client.h>
+void vstream_error(const char *format, ... ) {}
+int main(void) { vstream_start(); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -lvstream-client
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: vstream-client.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for OSD menu ============
+Result is: no 
+##########################################
+
+============ Checking for Subtitles sorting ============
+Result is: yes 
+##########################################
+
+============ Checking for XMMS inputplugin support ============
+Result is: no 
+##########################################
+
+============ Checking for GUI ============
+============ Checking for automatic gdb attach ============
+Result is: no 
+##########################################
+
+============ Checking for compiler support for noexecstack ============
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -Wl,-z,noexecstack
+
+
+Result is: yes 
+##########################################
+
+============ Checking for linker support for --nxcompat --no-seh --dynamicbase ============
+
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static -Wl,-z,noexecstack  -ffast-math     -o /tmp/mplayer-configure-31487-10578/tmp -Wl,--nxcompat -Wl,--no-seh -Wl,--dynamicbase
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: unrecognized option '--nxcompat'
+/root/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: use the --help option for usage information
+collect2: ld returned 1 exit status
+
+
+Result is: no 
+##########################################
+
+============ Checking for joystick ============
+Result is: no 
+##########################################
+
+============ Checking for lirc ============
+
+#include <lirc/lirc_client.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static -Wl,-z,noexecstack  -ffast-math   -lpthread -ldl -rdynamic   -o /tmp/mplayer-configure-31487-10578/tmp -llirc_client
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: lirc/lirc_client.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for lircc ============
+
+#include <lirc/lircc.h>
+int main(void) { return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static -Wl,-z,noexecstack  -ffast-math   -lpthread -ldl -rdynamic   -o /tmp/mplayer-configure-31487-10578/tmp -llircc
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: lirc/lircc.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for maemo (Nokia 770|8x0) ============
+
+#include <libosso.h>
+int main(void) { (void) osso_initialize("", "", 0, NULL); return 0; }
+
+arm-none-linux-gnueabi-gcc /tmp/mplayer-configure-31487-10578/tmp.c -Wstrict-prototypes -Wmissing-prototypes -Wundef -Wdisabled-optimization -Wno-pointer-sign -Wdeclaration-after-statement -std=gnu99 -Wall -Wno-switch -Wno-parentheses -Wpointer-arith -Wredundant-decls -O4   -pipe -ffast-math -fomit-frame-pointer -I.    -static -Wl,-z,noexecstack  -ffast-math   -lpthread -ldl -rdynamic   -o /tmp/mplayer-configure-31487-10578/tmp 
+/tmp/mplayer-configure-31487-10578/tmp.c:1: fatal error: libosso.h: No such file or directory
+compilation terminated.
+
+
+Result is: no 
+##########################################
+
+============ Checking for DVD support (libdvdnav) ============
+Result is: no 
+##########################################
+

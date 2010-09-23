@@ -1,0 +1,1 @@
+aandcttab.o: aandcttab.c
