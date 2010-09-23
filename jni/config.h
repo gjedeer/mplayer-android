@@ -270,9 +270,9 @@
 #undef CONFIG_NAS
 
 
-#define CONFIG_OSS_AUDIO 1
-#define PATH_DEV_DSP "/dev/dsp"
-#define PATH_DEV_MIXER "/dev/mixer"
+#undef CONFIG_OSS_AUDIO
+//#define PATH_DEV_DSP "/dev/dsp"
+//#define PATH_DEV_MIXER "/dev/mixer"
 #undef CONFIG_PULSE
 
 #undef CONFIG_SUN_AUDIO
@@ -348,8 +348,8 @@
 #undef CONFIG_DIRECTFB
 
 
-#define CONFIG_DVB 1
-#define CONFIG_DVBIN 1
+#undef CONFIG_DVB 
+#undef CONFIG_DVBIN 
 #undef CONFIG_DXR2
 #undef CONFIG_DXR3
 #define CONFIG_FBDEV 1
@@ -379,7 +379,7 @@
 #undef CONFIG_TDFXFB
 #undef CONFIG_XVR100
 #define CONFIG_TGA 1
-#define CONFIG_V4L2_DECODER 1
+#undef CONFIG_V4L2_DECODER
 #define CONFIG_VDPAU 0
 #undef CONFIG_VESA
 #undef CONFIG_VIDIX
